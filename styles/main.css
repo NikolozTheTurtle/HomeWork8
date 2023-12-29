@@ -1,0 +1,220 @@
+@import url(./montserrat.css);
+body .logo {
+  display: inline-block;
+  padding: 0 20px 20px 0;
+}
+body header nav .main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 40px 40px 20px;
+}
+body header nav .main-nav .nav-left {
+  display: inline-block;
+  padding: 0 20px;
+}
+body header nav .main-nav .nav-right {
+  display: flex;
+  align-items: center;
+}
+body header nav .main-nav .nav-right ul {
+  display: flex;
+  gap: 21px;
+  margin-right: 44px;
+}
+body header nav .main-nav .nav-right ul li {
+  display: inline;
+  padding: 0 10px;
+}
+body header nav .main-nav .nav-right ul li a {
+  color: var(--text, #252B42);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.2px;
+}
+body header nav .main-nav .nav-right form {
+  display: flex;
+  gap: 12px;
+}
+body header nav .main-nav .nav-right form input {
+  margin: 0;
+  border-radius: 10px;
+  border: 2px solid #E8E8E8;
+  background: #EFEFEF;
+  padding: 21px 0 17px 25px;
+  width: 273px;
+}
+body header nav .main-nav .nav-right form input::placeholder {
+  color: #B0B0B0;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  letter-spacing: 0.1px;
+}
+body header nav .main-nav .nav-right form button {
+  border-radius: 10px;
+  border: 0;
+  background: var(--Primary, #2091F9);
+  color: var(--Light-text, #FFF);
+  font-family: Montserrat;
+  padding: 19px 38px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.2px;
+}
+body main .reg-main {
+  display: grid;
+  grid-template-columns: 49% auto;
+}
+body main .reg-main img {
+  width: 100%;
+  object-fit: cover;
+}
+body main .reg-main .reg-form {
+  background: #F1F1F1;
+  padding: 188px 103px;
+}
+body main .reg-main .reg-form h2 {
+  text-align: center;
+  color: var(--Primary, #2091F9);
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px; /* 142.5% */
+  letter-spacing: 0.2px;
+}
+body main .reg-main .reg-form .form-subheader {
+  color: var(--text, #252B42);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.2px;
+  display: block;
+  padding: 10px;
+  width: 38ch;
+  max-width: 100%;
+  margin: 0 auto 38px auto;
+}
+body main .reg-main .reg-form form input {
+  border-radius: 10px;
+  border: 2px solid var(--disabled, #8EC2F2);
+  background: #FFF;
+  padding: 21px 0 17px 25px;
+}
+body main .reg-main .reg-form form input::placeholder {
+  color: #B0B0B0;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px; /* 106.667% */
+  letter-spacing: 0.1px;
+}
+body main .reg-main .reg-form form input[type=email] {
+  width: 100%;
+  margin-bottom: 23px;
+}
+body main .reg-main .reg-form form .passwords {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 22px;
+}
+body main .reg-main .reg-form form .terms-conditions {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+}
+body main .reg-main .reg-form form .terms-conditions label {
+  color: var(--text, #252B42);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.2px;
+  padding: 0 12px 4px 0;
+}
+body main .reg-main .reg-form form .terms-conditions label span {
+  color: var(--Primary, #2091F9);
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+body main .reg-main .reg-form form button {
+  display: block;
+  border-radius: 10px;
+  background: var(--Primary, #2091F9);
+  border: 0;
+  color: var(--Light-text, #FFF);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.2px;
+  margin: 16px auto 30px auto;
+  padding: 18px 121px;
+}
+body main .reg-main .reg-form .already {
+  color: var(--text, #252B42);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+body main .reg-main .reg-form .already a {
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+body footer {
+  padding: 28px 45px 27px 110px;
+}
+body footer ul {
+  display: flex;
+  align-items: center;
+}
+body footer .footer-ul {
+  justify-content: space-between;
+}
+body footer .footer-ul .media-ul {
+  gap: 24px;
+}
+body footer .footer-ul #whatever {
+  padding: 0 10px;
+  color: var(--second-text, #5C5C5C);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.1px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1270px) {
+  .container {
+    width: 1264px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
