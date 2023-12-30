@@ -72,6 +72,7 @@ body main .reg-main {
 }
 body main .reg-main img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 body main .reg-main .reg-form {
@@ -196,24 +197,93 @@ body footer .footer-ul #whatever {
   letter-spacing: 0.1px;
 }
 
-.container {
-  width: 100%;
-  margin: auto;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
+@media screen and (max-width: 1200px) {
+  body header nav .main-nav {
+    padding-right: 20px;
+  }
+  body header nav .main-nav .nav-left a {
+    padding: 0;
+  }
+  body header nav .main-nav .nav-left a img {
+    width: 140px;
+  }
+  body main .reg-main {
+    grid-template-columns: 35% auto;
   }
 }
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
+@media screen and (max-width: 1080px) {
+  body header nav .main-nav {
+    display: block;
+  }
+  body header nav .main-nav .nav-left {
+    display: flex;
+    justify-content: center;
+  }
+  body header nav .main-nav .nav-left a {
+    padding: 0;
+  }
+  body header nav .main-nav .nav-left a img {
+    width: 185px;
+    margin-bottom: 30px;
+  }
+  body header nav .main-nav .nav-right {
+    justify-content: center;
   }
 }
-@media (min-width: 1270px) {
-  .container {
-    width: 1264px;
+@media screen and (max-width: 950px) {
+  body header nav .main-nav .nav-right form input {
+    width: 180px;
+    padding: 15px 0 10px 20px;
+  }
+  body main .reg-main {
+    display: block;
+  }
+  body main .reg-main img {
+    display: none;
+  }
+  body footer {
+    padding: 28px 45px 27px 45px;
+  }
+}
+@media screen and (max-width: 820px) {
+  body header nav .main-nav .nav-right {
+    display: block;
+  }
+  body header nav .main-nav .nav-right ul {
+    justify-content: center;
+    margin: 0 0 30px 0;
+  }
+  body header nav .main-nav .nav-right form {
+    justify-content: center;
+  }
+  body header nav .main-nav .nav-right form input {
+    width: 280px;
+  }
+  body footer .footer-ul {
+    display: grid;
+    grid-template-areas: ". ." "footerLogo footerLogo";
+    justify-items: center;
+    row-gap: 20px;
+  }
+  body footer .footer-ul .logo-li {
+    grid-area: footerLogo;
+  }
+  body footer .footer-ul #whatever {
+    padding: 0;
+  }
+  body footer .footer-ul .logo {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 625px) {
+  body main .reg-main .reg-form form .passwords {
+    display: block;
+  }
+  body main .reg-main .reg-form form .passwords input {
+    width: 100%;
+  }
+  body main .reg-main .reg-form form .passwords input:first-child {
+    margin-bottom: 20px;
   }
 }
 
