@@ -25,6 +25,7 @@ body header nav .main-nav label .burger-icon-line {
   width: 30px;
   height: 4px;
   background-color: #737373;
+  transition: all 0.3s ease-in-out;
 }
 body header nav .main-nav .nav-right {
   display: flex;
@@ -329,6 +330,16 @@ body footer .footer-ul #whatever {
   }
   body header nav .main-nav input[type=checkbox]:checked ~ .nav-right {
     display: block;
+  }
+  body header nav .main-nav input[type=checkbox]:checked + label .burger-icon-line:first-child {
+    transform: rotate(-45deg);
+  }
+  body header nav .main-nav input[type=checkbox]:checked + label .burger-icon-line:nth-child(2) {
+    opacity: 0;
+  }
+  body header nav .main-nav input[type=checkbox]:checked + label .burger-icon-line:last-child {
+    transform: rotate(45deg);
+    margin-top: -15.9px;
   }
   body header nav .main-nav .nav-right {
     grid-area: burger;

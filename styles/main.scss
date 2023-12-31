@@ -34,6 +34,7 @@ body {
                         width: 30px;
                         height: 4px;
                         background-color: #737373;
+                        transition: all 0.3s ease-in-out;
                     }
                 }
 
@@ -461,6 +462,16 @@ body {
                     }
                     input[type=checkbox]:checked~.nav-right {
                         display: block;
+                    }
+                    input[type=checkbox]:checked+label .burger-icon-line:first-child{
+                        transform: rotate(-45deg);
+                    }
+                    input[type=checkbox]:checked+label .burger-icon-line:nth-child(2){
+                        opacity: 0;
+                    }
+                    input[type=checkbox]:checked+label .burger-icon-line:last-child{
+                        transform: rotate(45deg);
+                        margin-top: -15.9px;
                     }
                     .nav-right {
                         grid-area: burger;
