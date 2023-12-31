@@ -12,6 +12,20 @@ body header nav .main-nav .nav-left {
   display: inline-block;
   padding: 0 20px;
 }
+body header nav .main-nav input[type=checkbox] {
+  display: none;
+}
+body header nav .main-nav label {
+  display: none;
+  flex-direction: column;
+  row-gap: 4px;
+  cursor: pointer;
+}
+body header nav .main-nav label .burger-icon-line {
+  width: 30px;
+  height: 4px;
+  background-color: #737373;
+}
 body header nav .main-nav .nav-right {
   display: flex;
   align-items: center;
@@ -31,7 +45,8 @@ body header nav .main-nav .nav-right ul li a {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 600;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
   letter-spacing: 0.2px;
 }
 body header nav .main-nav .nav-right form {
@@ -51,7 +66,8 @@ body header nav .main-nav .nav-right form input::placeholder {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16px; /* 114.286% */
+  line-height: 16px;
+  /* 114.286% */
   letter-spacing: 0.1px;
 }
 body header nav .main-nav .nav-right form button {
@@ -63,7 +79,8 @@ body header nav .main-nav .nav-right form button {
   padding: 19px 38px;
   font-size: 16px;
   font-weight: 700;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
   letter-spacing: 0.2px;
 }
 body main .reg-main {
@@ -85,7 +102,8 @@ body main .reg-main .reg-form h2 {
   font-family: Montserrat;
   font-size: 40px;
   font-weight: 700;
-  line-height: 57px; /* 142.5% */
+  line-height: 57px;
+  /* 142.5% */
   letter-spacing: 0.2px;
 }
 body main .reg-main .reg-form .form-subheader {
@@ -94,7 +112,8 @@ body main .reg-main .reg-form .form-subheader {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
   letter-spacing: 0.2px;
   display: block;
   padding: 10px;
@@ -113,7 +132,8 @@ body main .reg-main .reg-form form input::placeholder {
   font-family: Montserrat;
   font-size: 15px;
   font-weight: 500;
-  line-height: 16px; /* 106.667% */
+  line-height: 16px;
+  /* 106.667% */
   letter-spacing: 0.1px;
 }
 body main .reg-main .reg-form form input[type=email] {
@@ -135,7 +155,8 @@ body main .reg-main .reg-form form .terms-conditions label {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
   letter-spacing: 0.2px;
   padding: 0 12px 4px 0;
 }
@@ -154,7 +175,8 @@ body main .reg-main .reg-form form button {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 700;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
   letter-spacing: 0.2px;
   margin: 16px auto 30px auto;
   padding: 18px 121px;
@@ -164,7 +186,8 @@ body main .reg-main .reg-form .already {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
   letter-spacing: 0.2px;
   text-align: center;
 }
@@ -193,7 +216,8 @@ body footer .footer-ul #whatever {
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 700;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
+  /* 150% */
   letter-spacing: 0.1px;
 }
 
@@ -284,6 +308,84 @@ body footer .footer-ul #whatever {
   }
   body main .reg-main .reg-form form .passwords input:first-child {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 530px) {
+  body header nav .main-nav {
+    display: grid;
+    grid-template-areas: ". ." "burger burger";
+  }
+  body header nav .main-nav .nav-left {
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 17px;
+  }
+  body header nav .main-nav .nav-left a img {
+    margin: 0;
+  }
+  body header nav .main-nav label {
+    display: flex;
+    align-self: center;
+  }
+  body header nav .main-nav input[type=checkbox]:checked ~ .nav-right {
+    display: block;
+  }
+  body header nav .main-nav .nav-right {
+    grid-area: burger;
+    display: none;
+  }
+  body header nav .main-nav .nav-right ul {
+    display: block;
+  }
+  body header nav .main-nav .nav-right ul li {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  body header nav .main-nav .nav-right form {
+    display: flex;
+    flex-direction: column;
+  }
+  body header nav .main-nav .nav-right form input {
+    width: 80%;
+    margin: auto;
+  }
+  body header nav .main-nav .nav-right form button {
+    width: 80%;
+    margin: auto;
+  }
+  body main .reg-main img {
+    display: block;
+  }
+  body main .reg-main .reg-form {
+    padding: 35px 20px 125px 20px;
+  }
+  body main .reg-main .reg-form h2 {
+    font-size: 24px;
+    line-height: 36px; /* 150% */
+    letter-spacing: 0.1px;
+    padding: 10px;
+  }
+  body main .reg-main .reg-form .form-subheader {
+    width: 25ch;
+    margin: 17px auto 29px auto;
+  }
+  body main .reg-main .reg-form form button {
+    margin-bottom: 40px;
+  }
+  body footer .footer-ul {
+    display: block;
+  }
+  body footer .footer-ul .logo-li {
+    text-align: center;
+    margin-bottom: 71px;
+  }
+  body footer .footer-ul .media-ul {
+    justify-content: center;
+  }
+  body footer .footer-ul #whatever {
+    margin-top: 50px;
+    text-align: center;
   }
 }
 
